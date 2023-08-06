@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de moneda</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Conversor de monedas</h1>
+    <div class="container">
+        <form id="calculadora" class="caja">
+            <h2>Pesos Chilenos</h2>
+            <input type="text" name="valor" />
+
+            <p>Moneda a Convertir</p>
+            <select name="dinero" id="">
+                <option value="">Elija el valor al que desea cambiar </option>
+                <option value="euro">Euro</option>
+                <option value="dolar">Dolar</option>
+                <option value="uf">Uf</option>
+            </select>
+
+            <button type="submit" class="buscar">
+                Buscar
+            </button>
+
+            <div class="convertir">
+                <h3 id="total-valor"></h3>
+            </div>
+        </form>
+        <div class="grafico">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>
