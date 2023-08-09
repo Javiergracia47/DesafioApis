@@ -16,7 +16,7 @@ const DatosMoneda = async (moneda) => {
 const calcularmonedas = (valor, datos) => {
   const valorMoneda = datos[0].valor
   const total = valor / valorMoneda;
-  return Math.round(total *100);
+  return Math.round(total *100) / 100;
 };
 
 const mostrarTotal = (total) => {
